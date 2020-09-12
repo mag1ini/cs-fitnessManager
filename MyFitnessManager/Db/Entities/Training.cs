@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace MyFitnessManager.Db.Entities
 {
-    public class Training
+    public class Training : BaseEntity
     {
     }
 }

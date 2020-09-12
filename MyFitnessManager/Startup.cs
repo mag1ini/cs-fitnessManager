@@ -25,7 +25,9 @@ namespace MyFitnessManager
         {
             services.AddControllers();
             var connectionString = Configuration["DbConnectionString"];
-            services.AddDbContext<FitnessDbContext>(builder => builder.UseSqlServer(connectionString));
+            services
+                .AddDbContext<FitnessDbContext>
+                    (builder => builder.UseSqlServer(connectionString));
 
         }
 
@@ -42,7 +44,7 @@ namespace MyFitnessManager
             {
                 endpoints.MapGet("/", async context =>
                 {
-                    await context.Response.WriteAsync("Hellod World!");
+                    await context.Response.WriteAsync("Hello World!");
                 });
             });
         }

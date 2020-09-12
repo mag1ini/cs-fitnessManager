@@ -13,6 +13,27 @@ namespace MyFitnessManager.Db
 
         public DbSet<Hall> Halls { get; set; }
 
-        public DbSet<Training> Trainings { get; set; }
+      //  public DbSet<Training> Trainings { get; set; }
+
+        
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Coach>()
+                .Property(p => p.Firstname)
+                .IsRequired()
+                .HasMaxLength(255);
+
+            modelBuilder.Entity<Coach>()
+                .Property(p => p.Lastname)
+                .IsRequired()
+                .HasMaxLength(255);
+
+            modelBuilder.Entity<Coach>()
+                .Property(p => p.Speciality)
+                .HasConversion<int>();
+
+
+        }
+
     }
 }

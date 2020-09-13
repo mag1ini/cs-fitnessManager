@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using MyFitnessManager.Db;
 using MyFitnessManager.Db.Entities;
+using MyFitnessManager.Db.Repositories;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -14,43 +16,54 @@ namespace MyFitnessManager.Controllers
     [ApiController]
     public class CoachController : ControllerBase
     {
-        private readonly FitnessDbContext _context;
+        private readonly ICoachRepository _repository;
 
-        public CoachController(FitnessDbContext context)
+
+        public CoachController(ICoachRepository repository)
         {
-            _context = context;
+            _repository = repository;
         }
 
         // GET: api/<CoachController>
         [HttpGet]
-        public ActionResult<IEnumerable<Coach>> Get()
+        public async Task<ActionResult<IEnumerable<Coach>>> Get()
         {
-            return _context.Coaches.ToList();
+            return Ok(await _repository.GetAsync());
         }
 
         // GET api/<CoachController>/5
         [HttpGet("{id}")]
-        public ActionResult<Coach> Get(int id)
+        public async Task<ActionResult<Coach>> Get(int id)
         {
-            return _context.Coaches.FirstOrDefault(c => c.Id == id);
+            return Ok(await _repository.GetAsync(id));
         }
 
         // POST api/<CoachController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public async Task<ActionResult<Coach>> Post([FromBody] Coach coach)
         {
-        }
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
 
+            _repository.Create(coach);
+            await _repository.SaveChangesAsync();
+
+            return coach;
+        }
+        /*
         // PUT api/<CoachController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public async Task<ActionResult<Coach>> Put(int id, [FromBody] string value)
         {
-        }
+        }*/
 
         // DELETE api/<CoachController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
+        public async Task Delete(int id)
+        { 
+            var toDelete = await _repository.GetAsync(id);
+             _repository.Delete(toDelete);
+            await _repository.SaveChangesAsync();
         }
     }
 }

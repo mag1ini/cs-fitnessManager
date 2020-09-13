@@ -9,6 +9,12 @@ namespace MyFitnessManager.Db
 {
     public class FitnessDbContext : DbContext
     {
+        public FitnessDbContext(DbContextOptions options)
+            : base(options)
+        {
+            
+        }
+
         public DbSet<Coach> Coaches { get; set; }
 
         public DbSet<Hall> Halls { get; set; }

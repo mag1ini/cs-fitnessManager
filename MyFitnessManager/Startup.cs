@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MyFitnessManager.Db;
+using MyFitnessManager.Db.Repositories;
 
 namespace MyFitnessManager
 {
@@ -25,9 +26,11 @@ namespace MyFitnessManager
         {
             services.AddControllers();
             var connectionString = Configuration["DbConnectionString"];
-            services
-                .AddDbContext<FitnessDbContext>
+            services.AddDbContext<FitnessDbContext>
                     (builder => builder.UseSqlServer(connectionString));
+
+            /*services.AddScoped<IHallRepository, HallRepository>();
+            services.AddScoped<ICoachRepository,CoachRepository>();*/
 
         }
 

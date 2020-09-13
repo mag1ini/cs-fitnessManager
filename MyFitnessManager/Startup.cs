@@ -25,6 +25,7 @@ namespace MyFitnessManager
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
             var connectionString = Configuration["DbConnectionString"];
             services.AddDbContext<FitnessDbContext>
                     (builder => builder.UseSqlServer(connectionString));
@@ -53,9 +54,13 @@ namespace MyFitnessManager
 
         private void EnsureDbCreated(IApplicationBuilder app)
         {
-            using var serviceScope = 
-                app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope();
-            var context = serviceScope.ServiceProvider.GetRequiredService<FitnessDbContext>();
+            using var serviceScope = app.ApplicationServices
+                .GetService<IServiceScopeFactory>().CreateScope();
+
+            var context = serviceScope
+                .ServiceProvider
+                .GetRequiredService<FitnessDbContext>();
+
             context.Database.EnsureCreated();
 
         }

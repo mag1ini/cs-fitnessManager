@@ -19,11 +19,25 @@ namespace MyFitnessManager.Db
 
         public DbSet<Hall> Halls { get; set; }
 
-      //  public DbSet<Training> Trainings { get; set; }
+        public DbSet<Training> Trainings { get; set; }
 
-        
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Training>()
+                .Property(t => t.Title)
+                .IsRequired()
+                .HasMaxLength(255);
+
+            modelBuilder.Entity<Training>()
+                .HasOne(t => t.Coach)
+                .WithMany(c => c.Trainings);
+
+            modelBuilder.Entity<Training>()
+                .HasOne(t => t.Hall)
+                .WithMany(h => h.Trainings);           
+            
+
+
             modelBuilder.Entity<Coach>()
                 .Property(p => p.Firstname)
                 .IsRequired()
@@ -38,6 +52,12 @@ namespace MyFitnessManager.Db
                 .Property(p => p.Speciality)
                 .HasConversion<int>();
 
+
+
+            modelBuilder.Entity<Hall>()
+                .Property(h => h.Title)
+                .IsRequired()
+                .HasMaxLength(255);
 
         }
 

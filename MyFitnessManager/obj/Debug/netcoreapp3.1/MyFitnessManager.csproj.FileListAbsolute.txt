@@ -56,6 +56,7 @@ M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\MyFitnessManager\bin\Debug\netcore
 M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\MyFitnessManager\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\MyFitnessManager\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\MyFitnessManager\obj\Debug\netcoreapp3.1\MyFitnessManager.csproj.CopyComplete
+M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\MyFitnessManager\obj\Debug\netcoreapp3.1\MyFitnessManager.csprojAssemblyReference.cache
+M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\MyFitnessManager\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\MyFitnessManager\obj\Debug\netcoreapp3.1\MyFitnessManager.csproj.CoreCompileInputs.cache
 M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\MyFitnessManager\obj\Debug\netcoreapp3.1\MyFitnessManager.MvcApplicationPartsAssemblyInfo.cache
-M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\MyFitnessManager\obj\Debug\netcoreapp3.1\MyFitnessManager.csprojAssemblyReference.cache

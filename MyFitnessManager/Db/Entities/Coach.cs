@@ -12,6 +12,8 @@ namespace MyFitnessManager.Db.Entities
         public string Lastname { get; set; }    
 
         public TrainingType Speciality { get; set; }
+
+        public IEnumerable<Training> Trainings { get; set; }
     }
 
 }

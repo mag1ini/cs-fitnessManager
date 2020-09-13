@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace MyFitnessManager.Migrations
 {
-    public partial class Training : Migration
+    public partial class Trainings : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

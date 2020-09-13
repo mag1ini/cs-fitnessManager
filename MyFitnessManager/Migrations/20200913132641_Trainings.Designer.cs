@@ -10,8 +10,8 @@ using MyFitnessManager.Db;
 namespace MyFitnessManager.Migrations
 {
     [DbContext(typeof(FitnessDbContext))]
-    [Migration("20200913132158_Training")]
-    partial class Training
+    [Migration("20200913132641_Trainings")]
+    partial class Trainings
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

@@ -29,8 +29,8 @@ namespace MyFitnessManager
             services.AddDbContext<FitnessDbContext>
                     (builder => builder.UseSqlServer(connectionString));
 
-            /*services.AddScoped<IHallRepository, HallRepository>();
-            services.AddScoped<ICoachRepository,CoachRepository>();*/
+            services.AddScoped<IHallRepository, HallRepository>();
+            services.AddScoped<ICoachRepository,CoachRepository>();
 
         }
 

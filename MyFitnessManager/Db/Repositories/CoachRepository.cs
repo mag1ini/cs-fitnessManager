@@ -5,7 +5,7 @@ namespace MyFitnessManager.Db.Repositories
 {
     public class CoachRepository : Repository<Coach>, ICoachRepository
     {
-        public CoachRepository(DbContext context) : base(context)
+        public CoachRepository(FitnessDbContext context) : base(context)
         {
         }
     }

@@ -10,7 +10,7 @@ using MyFitnessManager.Db;
 namespace MyFitnessManager.Migrations
 {
     [DbContext(typeof(FitnessDbContext))]
-    [Migration("20200913132641_Trainings")]
+    [Migration("20200913135714_Trainings")]
     partial class Trainings
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -95,6 +95,8 @@ namespace MyFitnessManager.Migrations
                     b.HasIndex("CoachId");
 
                     b.HasIndex("HallId");
+
+                    b.HasIndex("StartTime");
 
                     b.ToTable("Trainings");
                 });

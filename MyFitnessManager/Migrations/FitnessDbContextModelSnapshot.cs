@@ -94,6 +94,8 @@ namespace MyFitnessManager.Migrations
 
                     b.HasIndex("HallId");
 
+                    b.HasIndex("StartTime");
+
                     b.ToTable("Trainings");
                 });
 

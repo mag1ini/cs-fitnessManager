@@ -45,6 +45,11 @@ namespace MyFitnessManager.Migrations
                 name: "IX_Trainings_HallId",
                 table: "Trainings",
                 column: "HallId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Trainings_StartTime",
+                table: "Trainings",
+                column: "StartTime");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

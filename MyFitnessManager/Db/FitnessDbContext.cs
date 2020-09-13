@@ -20,7 +20,8 @@ namespace MyFitnessManager.Db
         public DbSet<Hall> Halls { get; set; }
 
         public DbSet<Training> Trainings { get; set; }
-
+        
+        
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Training>()
@@ -34,8 +35,10 @@ namespace MyFitnessManager.Db
 
             modelBuilder.Entity<Training>()
                 .HasOne(t => t.Hall)
-                .WithMany(h => h.Trainings);           
-            
+                .WithMany(h => h.Trainings);
+
+            modelBuilder.Entity<Training>()
+                .HasIndex(t => t.StartTime);
 
 
             modelBuilder.Entity<Coach>()

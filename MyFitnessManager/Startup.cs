@@ -43,6 +43,8 @@ namespace MyFitnessManager
 
             app.UseRouting();
 
+            EnsureDbCreated(app);
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapGet("/", async context =>
@@ -50,6 +52,15 @@ namespace MyFitnessManager
                     await context.Response.WriteAsync("Hello World!");
                 });
             });
+        }
+
+        private void EnsureDbCreated(IApplicationBuilder app)
+        {
+            using var serviceScope = 
+                app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope();
+            var context = serviceScope.ServiceProvider.GetRequiredService<FitnessDbContext>();
+            context.Database.EnsureCreated();
+
         }
     }
 }

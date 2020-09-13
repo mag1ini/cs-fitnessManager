@@ -48,7 +48,7 @@ namespace MyFitnessManager.Controllers
             _repository.Create(coach);
             await _repository.SaveChangesAsync();
 
-            return coach;
+            return Ok(coach);
         }
         /*
         // PUT api/<CoachController>/5
@@ -59,11 +59,17 @@ namespace MyFitnessManager.Controllers
 
         // DELETE api/<CoachController>/5
         [HttpDelete("{id}")]
-        public async Task Delete(int id)
+        public async Task<ActionResult> Delete(int id)
         { 
             var toDelete = await _repository.GetAsync(id);
-             _repository.Delete(toDelete);
+
+            if (toDelete ==null)
+                return BadRequest($"coach with {id} wasn't found");
+
+            _repository.Delete(toDelete);
             await _repository.SaveChangesAsync();
+
+            return NoContent();
         }
     }
 }

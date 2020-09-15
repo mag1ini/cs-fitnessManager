@@ -7,7 +7,7 @@ namespace MyFitnessManager.Db.Entities
 {
     public enum TrainingType
     {
-        Workout,
+        Workout = 1,
         Yoga,
         Box,
         Fitness,

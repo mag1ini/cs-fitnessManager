@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFitnessManager", "MyFitnessManager\MyFitnessManager.csproj", "{D5B0FD69-C9B5-42F4-A759-5A083788A2EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFitnessManager", "MyFitnessManager\MyFitnessManager.csproj", "{D5B0FD69-C9B5-42F4-A759-5A083788A2EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFitnessManager.Tests", "MyFitnessManager.Tests\MyFitnessManager.Tests.csproj", "{4BDBAB13-457E-49B2-8408-F1899C6AF986}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{D5B0FD69-C9B5-42F4-A759-5A083788A2EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5B0FD69-C9B5-42F4-A759-5A083788A2EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5B0FD69-C9B5-42F4-A759-5A083788A2EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BDBAB13-457E-49B2-8408-F1899C6AF986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BDBAB13-457E-49B2-8408-F1899C6AF986}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BDBAB13-457E-49B2-8408-F1899C6AF986}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BDBAB13-457E-49B2-8408-F1899C6AF986}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

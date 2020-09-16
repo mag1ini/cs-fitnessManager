@@ -61,6 +61,29 @@ namespace MyFitnessManager.Controllers
             }
         }
 
+        // PUT api/<CoachController>/5
+        [HttpPut("{id}")]
+        public async Task<ActionResult> Put(int id, [FromBody] Coach inCoach)
+        {
+            try
+            {
+                var toEdit = await _repository.GetAsync(id);
+                if (toEdit==null) 
+                    return BadRequest($"coach with {id} wasn't found");
+           
+                _repository.Update(inCoach);
+                await _repository.SaveChangesAsync();
+
+                return Ok(toEdit);
+            }
+            catch(Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    "Error updating coach");
+            }
+
+        }
+
         // DELETE api/<CoachController>/5
         [HttpDelete("{id}")]
         public async Task<ActionResult> Delete(int id)

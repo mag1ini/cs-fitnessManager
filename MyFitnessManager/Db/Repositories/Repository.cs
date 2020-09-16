@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using MyFitnessManager.Db.Entities;
@@ -26,6 +27,10 @@ namespace MyFitnessManager.Db.Repositories
             return await _dbSet.ToListAsync();
         }
 
+        public virtual T Get(int id)
+        {
+            return _dbSet.FirstOrDefault(t => t.Id == id);
+        }
         public virtual  async Task<T> GetAsync(int id)
         {
             return await _dbSet.FirstOrDefaultAsync(t => t.Id == id);
@@ -33,7 +38,7 @@ namespace MyFitnessManager.Db.Repositories
 
         public virtual void Update(T entity)
         {
-            _dbSet.Update(entity);
+           _dbSet.Update(entity);
         }
         
         public virtual void Delete(T entity)

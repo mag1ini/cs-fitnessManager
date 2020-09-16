@@ -11,6 +11,8 @@ namespace MyFitnessManager.Db.Repositories
 
         Task<IEnumerable<T>> GetAsync();
 
+        T Get(int id);
+
         Task<T> GetAsync(int id);
 
         void Update(T entity);

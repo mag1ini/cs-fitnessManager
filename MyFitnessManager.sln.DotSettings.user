@@ -1,12 +1,19 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=40f060d9_002D0613_002D4d4d_002D964b_002Da17e62fcc066/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Post_Returns_Http_Request" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::4BDBAB13-457E-49B2-8408-F1899C6AF986::.NETCoreApp,Version=v3.1::MyFitnessManager.Tests.CoachControllerTest&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=674ded30_002Df7a0_002D47ae_002D93eb_002Dd30bcc85b5cf/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GetAll_Returns_List_Of_Coaches #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::4BDBAB13-457E-49B2-8408-F1899C6AF986::.NETCoreApp,Version=v3.1::MyFitnessManager.Tests.CoachControllerTest.GetAll_Returns_List_Of_Coaches&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=efdb05df_002De397_002D4577_002Db1ad_002D8e02cfd73665/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="GetAll_Returns_List_Of_Coaches" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=efdb05df_002De397_002D4577_002Db1ad_002D8e02cfd73665/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GetAll_Returns_List_Of_Coaches" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::4BDBAB13-457E-49B2-8408-F1899C6AF986::.NETCoreApp,Version=v3.1::MyFitnessManager.Tests.CoachControllerTest.GetAll_Returns_List_Of_Coaches&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::4BDBAB13-457E-49B2-8408-F1899C6AF986::.NETCoreApp,Version=v3.1::MyFitnessManager.Tests.CoachControllerTest.Post_Return_Http_request&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::4BDBAB13-457E-49B2-8408-F1899C6AF986::.NETCoreApp,Version=v3.1::MyFitnessManager.Tests.CoachControllerTest.Post_Returns_Http_Request&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	</wpf:ResourceDictionary>

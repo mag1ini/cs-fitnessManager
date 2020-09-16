@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using MyFitnessManager.Db.Entities;
+using MyFitnessManager.Db.Repositories;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -12,36 +15,52 @@ namespace MyFitnessManager.Controllers
     [ApiController]
     public class HallController : ControllerBase
     {
+        private readonly IHallRepository _repository;
+
+        public HallController(IHallRepository repository)
+        {
+            _repository = repository;
+        }
         // GET: api/<HallController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public async Task<ActionResult<IEnumerable<Hall>>> Get()
         {
-            return new string[] { "value1", "value2" };
+            return Ok(await _repository.GetAsync());
         }
 
-        // GET api/<HallController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
 
-        // POST api/<HallController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public async Task<ActionResult<Hall>> Post([FromBody] Hall hall)
         {
+            try
+            {
+                if (!ModelState.IsValid)
+                    return BadRequest(ModelState);
+
+                _repository.Create(hall);
+
+                await _repository.SaveChangesAsync();
+
+                return Ok(hall);
+            }
+            catch (Exception e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError);
+            }
         }
 
-        // PUT api/<HallController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/<HallController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public async Task<ActionResult> Delete(int id)
         {
+            var toDelete = await _repository.GetAsync(id);
+
+            if (toDelete == null)
+                return BadRequest($"coach with {id} wasn't found");
+
+            _repository.Delete(toDelete);
+            await _repository.SaveChangesAsync();
+
+            return NoContent();
         }
     }
 }

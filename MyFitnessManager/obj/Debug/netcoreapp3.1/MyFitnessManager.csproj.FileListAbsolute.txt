@@ -58,5 +58,4 @@ M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\MyFitnessManager\bin\Debug\netcore
 M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\MyFitnessManager\obj\Debug\netcoreapp3.1\MyFitnessManager.csproj.CopyComplete
 M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\MyFitnessManager\obj\Debug\netcoreapp3.1\MyFitnessManager.csprojAssemblyReference.cache
 M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\MyFitnessManager\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
-M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\MyFitnessManager\obj\Debug\netcoreapp3.1\MyFitnessManager.csproj.CoreCompileInputs.cache
-M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\MyFitnessManager\obj\Debug\netcoreapp3.1\MyFitnessManager.MvcApplicationPartsAssemblyInfo.cache
+M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\MyFitnessManager\bin\Debug\netcoreapp3.1\AutoMapper.dll

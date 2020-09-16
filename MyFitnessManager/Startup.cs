@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -32,7 +33,9 @@ namespace MyFitnessManager
 
             services.AddScoped<IHallRepository, HallRepository>();
             services.AddScoped<ICoachRepository,CoachRepository>();
+            services.AddScoped<ITrainingRepository, TrainingRepository>();
 
+            services.AddAutoMapper(GetType());
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

@@ -57,7 +57,7 @@ namespace MyFitnessManager.Controllers
             }
             catch (Exception e)
             {
-                return StatusCode(500);
+                return StatusCode(StatusCodes.Status500InternalServerError);
             }
         }
 
@@ -78,8 +78,7 @@ namespace MyFitnessManager.Controllers
             }
             catch(Exception)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError,
-                    "Error updating coach");
+                return StatusCode(StatusCodes.Status500InternalServerError);
             }
 
         }

@@ -9,46 +9,46 @@ namespace MyFitnessManager.Db.Repositories
 {
     public abstract class Repository<T> : IRepository<T> where T : BaseEntity
     {
-        private readonly DbContext _context;
-        private readonly DbSet<T> _dbSet;
+        protected readonly DbContext Context;
+        protected readonly DbSet<T> DbSet;
 
-        public Repository(DbContext context)
+        protected Repository(DbContext context)
         {
-            _context = context;
-            _dbSet = context.Set<T>();
+            Context = context;
+            DbSet = context.Set<T>();
         }
         public virtual void Create(T entity)
         { 
-            _dbSet.Add(entity);
+            DbSet.Add(entity);
         }
 
         public virtual async Task<IEnumerable<T>> GetAsync()
         {
-            return await _dbSet.ToListAsync();
+            return await DbSet.ToListAsync();
         }
 
         public virtual T Get(int id)
         {
-            return _dbSet.FirstOrDefault(t => t.Id == id);
+            return DbSet.FirstOrDefault(t => t.Id == id);
         }
         public virtual  async Task<T> GetAsync(int id)
         {
-            return await _dbSet.FirstOrDefaultAsync(t => t.Id == id);
+            return await DbSet.FirstOrDefaultAsync(t => t.Id == id);
         }
 
         public virtual void Update(T entity)
         {
-           _dbSet.Update(entity);
+           DbSet.Update(entity);
         }
         
         public virtual void Delete(T entity)
         {
-            _dbSet.Remove(entity);
+            DbSet.Remove(entity);
         }
 
         public virtual async Task SaveChangesAsync()
         {
-            await _context.SaveChangesAsync();
+            await Context.SaveChangesAsync();
         }
     }
 }

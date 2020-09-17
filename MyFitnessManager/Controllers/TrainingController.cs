@@ -37,13 +37,13 @@ namespace MyFitnessManager.Controllers
                 return BadRequest(ModelState);
             }
 
-            var coach = _coachRepository.GetAsync(model.CoachId);
+            var coach = await _coachRepository.GetAsync(model.CoachId);
             if (coach == null)
             {
                 return BadRequest($"No coach was found with Id:{model.CoachId}");
             }
 
-            var hall = _hallRepository.GetAsync(model.HallId);
+            var hall = await _hallRepository.GetAsync(model.HallId);
             if (hall == null)
             {
                 return BadRequest($"No hall was found with Id:{model.HallId}");
@@ -51,7 +51,17 @@ namespace MyFitnessManager.Controllers
 
             var dateFrom = model.StartTime.AddHours(-1);
             var dateTo = model.StartTime.AddHours(1);
-            var conflictingTraining = await _repository.GetForRange(dateFrom, dateTo);
+
+            var conflictingTraining = _repository
+                .GetForRange(dateFrom, dateTo)
+                .Where(t => t.CoachId == model.CoachId 
+                                 || t.HallId == model.HallId);
+
+            if (conflictingTraining.Any())
+            {
+                return BadRequest($"Cannot add training for this time" +
+                                  $" (Coach or hall busy for this time)");
+            }
 
             var entity = new Training()
             {
@@ -61,15 +71,15 @@ namespace MyFitnessManager.Controllers
                 HallId = model.HallId,
                 StartTime = model.StartTime
             };
-            try
-            {
+           // try
+          //  {
                 _repository.Create(entity);
                 await _repository.SaveChangesAsync();
-            }
-            catch (Exception e)
-            {
-                return BadRequest();
-            }
+         //   }
+        //    catch (Exception e)
+         //   {
+         //       return BadRequest();
+        //    }
           
             return Created(string.Empty, entity);
 

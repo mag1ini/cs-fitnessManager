@@ -2001,12 +2001,26 @@
           "build/netcoreapp1.0/xunit.runner.visualstudio.props": {}
         }
       },
+      "Infrastructure.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "3.1.8"
+        },
+        "compile": {
+          "bin/placeholder/Infrastructure.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infrastructure.Data.dll": {}
+        }
+      },
       "MyFitnessManager/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "AutoMapper": "10.0.0",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "8.0.1",
+          "Infrastructure.Data": "1.0.0",
           "Microsoft.EntityFrameworkCore": "3.1.8",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.8"
         },
@@ -6755,6 +6769,11 @@
         "xunit.runner.visualstudio.2.4.0.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "Infrastructure.Data/1.0.0": {
+      "type": "project",
+      "path": "../Infrastructure.Data/Infrastructure.Data.csproj",
+      "msbuildProject": "../Infrastructure.Data/Infrastructure.Data.csproj"
     },
     "MyFitnessManager/1.0.0": {
       "type": "project",

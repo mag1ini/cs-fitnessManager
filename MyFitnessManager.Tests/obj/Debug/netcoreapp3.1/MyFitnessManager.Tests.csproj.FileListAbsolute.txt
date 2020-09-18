@@ -143,3 +143,7 @@ M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\MyFitnessManager.Tests\bin\Debug\n
 M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\MyFitnessManager.Tests\obj\Debug\netcoreapp3.1\MyFitnessManager.Tests.dll
 M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\MyFitnessManager.Tests\obj\Debug\netcoreapp3.1\MyFitnessManager.Tests.pdb
 M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\MyFitnessManager.Tests\obj\Debug\netcoreapp3.1\MyFitnessManager.Tests.csproj.CoreCompileInputs.cache
+M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\MyFitnessManager.Tests\bin\Debug\netcoreapp3.1\AutoMapper.dll
+M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\MyFitnessManager.Tests\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\MyFitnessManager.Tests\bin\Debug\netcoreapp3.1\Infrastructure.Data.dll
+M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\MyFitnessManager.Tests\bin\Debug\netcoreapp3.1\Infrastructure.Data.pdb

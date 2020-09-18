@@ -5,7 +5,19 @@ VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFitnessManager", "MyFitnessManager\MyFitnessManager.csproj", "{D5B0FD69-C9B5-42F4-A759-5A083788A2EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFitnessManager.Tests", "MyFitnessManager.Tests\MyFitnessManager.Tests.csproj", "{4BDBAB13-457E-49B2-8408-F1899C6AF986}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFitnessManager.Tests", "MyFitnessManager.Tests\MyFitnessManager.Tests.csproj", "{4BDBAB13-457E-49B2-8408-F1899C6AF986}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Authentication", "Authentication", "{21CD9790-5444-40AB-9F4C-53BC085EAD0B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ManagerApi", "ManagerApi", "{AC33AAB4-61AB-46CA-BC59-37B6D710F15E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Authentication.API", "AuthenticationAPI\Authentication.API.csproj", "{9320F326-8C5E-4844-BD0F-CF0D70818297}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Authentication.Data", "Authentication.Data\Authentication.Data.csproj", "{A6F3161A-367B-49C6-87AC-7CFC97394F85}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{66E06A8E-BB76-43FB-8699-FFD620E8E48B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Data", "Infrastructure.Data\Infrastructure.Data.csproj", "{9781E0BD-393A-40D0-A4B9-37751E78ED41}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +33,28 @@ Global
 		{4BDBAB13-457E-49B2-8408-F1899C6AF986}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4BDBAB13-457E-49B2-8408-F1899C6AF986}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4BDBAB13-457E-49B2-8408-F1899C6AF986}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9320F326-8C5E-4844-BD0F-CF0D70818297}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9320F326-8C5E-4844-BD0F-CF0D70818297}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9320F326-8C5E-4844-BD0F-CF0D70818297}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9320F326-8C5E-4844-BD0F-CF0D70818297}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6F3161A-367B-49C6-87AC-7CFC97394F85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6F3161A-367B-49C6-87AC-7CFC97394F85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6F3161A-367B-49C6-87AC-7CFC97394F85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6F3161A-367B-49C6-87AC-7CFC97394F85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9781E0BD-393A-40D0-A4B9-37751E78ED41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9781E0BD-393A-40D0-A4B9-37751E78ED41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9781E0BD-393A-40D0-A4B9-37751E78ED41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9781E0BD-393A-40D0-A4B9-37751E78ED41}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D5B0FD69-C9B5-42F4-A759-5A083788A2EA} = {AC33AAB4-61AB-46CA-BC59-37B6D710F15E}
+		{4BDBAB13-457E-49B2-8408-F1899C6AF986} = {AC33AAB4-61AB-46CA-BC59-37B6D710F15E}
+		{9320F326-8C5E-4844-BD0F-CF0D70818297} = {21CD9790-5444-40AB-9F4C-53BC085EAD0B}
+		{A6F3161A-367B-49C6-87AC-7CFC97394F85} = {21CD9790-5444-40AB-9F4C-53BC085EAD0B}
+		{9781E0BD-393A-40D0-A4B9-37751E78ED41} = {66E06A8E-BB76-43FB-8699-FFD620E8E48B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6F6610DD-E4E5-431B-989B-5E3ACC5CBFF4}

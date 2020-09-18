@@ -1,0 +1,12 @@
+M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\Authentication.Data\bin\Debug\netcoreapp3.1\Authentication.Data.deps.json
+M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\Authentication.Data\bin\Debug\netcoreapp3.1\Authentication.Data.dll
+M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\Authentication.Data\bin\Debug\netcoreapp3.1\Authentication.Data.pdb
+M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\Authentication.Data\obj\Debug\netcoreapp3.1\Authentication.Data.csprojAssemblyReference.cache
+M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\Authentication.Data\obj\Debug\netcoreapp3.1\Authentication.Data.AssemblyInfoInputs.cache
+M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\Authentication.Data\obj\Debug\netcoreapp3.1\Authentication.Data.AssemblyInfo.cs
+M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\Authentication.Data\obj\Debug\netcoreapp3.1\Authentication.Data.dll
+M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\Authentication.Data\obj\Debug\netcoreapp3.1\Authentication.Data.pdb
+M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\Authentication.Data\bin\Debug\netcoreapp3.1\Infrastructure.Data.dll
+M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\Authentication.Data\bin\Debug\netcoreapp3.1\Infrastructure.Data.pdb
+M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\Authentication.Data\obj\Debug\netcoreapp3.1\Authentication.Data.csproj.CoreCompileInputs.cache
+M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\Authentication.Data\obj\Debug\netcoreapp3.1\Authentication.Data.csproj.CopyComplete

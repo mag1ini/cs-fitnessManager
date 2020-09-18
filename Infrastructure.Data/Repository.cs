@@ -1,14 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using MyFitnessManager.Db.Entities;
 
-namespace MyFitnessManager.Db.Repositories
+namespace Infrastructure.Data
 {
     public abstract class Repository<T> : IRepository<T> where T : BaseEntity
     {
+
         protected readonly DbContext Context;
         protected readonly DbSet<T> DbSet;
 

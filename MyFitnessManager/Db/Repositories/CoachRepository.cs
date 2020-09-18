@@ -1,8 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
 using MyFitnessManager.Db.Entities;
 
 namespace MyFitnessManager.Db.Repositories
 {
+
     public class CoachRepository : Repository<Coach>, ICoachRepository
     {
         public CoachRepository(FitnessDbContext context) : base(context)

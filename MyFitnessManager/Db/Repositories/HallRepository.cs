@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
 using MyFitnessManager.Db.Entities;
 
 namespace MyFitnessManager.Db.Repositories

@@ -14,6 +14,7 @@ namespace Authentication.Data
 
         public DbSet<Permission> Permissions { get; set; }
 
+        public DbSet<RefreshToken> RefreshTokens { get; set; }
         public AuthenticationDbContext(DbContextOptions options) : base(options) {}
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

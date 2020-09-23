@@ -14,7 +14,7 @@ namespace Authentication.Data.Entities
         public string Password { get; set; }
 
 
-        public int RefreshTokenId { get; set; }
+        public int? RefreshTokenId { get; set; }
         public RefreshToken RefreshToken { get; set; }
     }
 

@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
+using System.Text;
 using System.Threading.Tasks;
 using Authentication.API.Models;
 using Authentication.Data;
@@ -47,11 +49,11 @@ namespace Authentication.API.Controllers
             _context.RefreshTokens.Update(new RefreshToken
             {
                 //   Id = user.RefreshTokenId ?? 0,
-                Id = user.RefreshTokenId,
+                Id = user.RefreshTokenId ?? 0,
                 Refresh = refreshToken,
                 UserId = user.Id
             });
-            _context.SaveChangesAsync();
+           await _context.SaveChangesAsync();
 
             return Ok(new TokenResponseModel(accessToken, refreshToken));
 
@@ -59,8 +61,11 @@ namespace Authentication.API.Controllers
 
         private string GenerateAccessToken(User user)
         {
-            var permissions =
-                user.Role.Permissions.Select(p => new Claim("Permission", ((int) p).ToString()));
+            var permissions = user
+                .Role
+                .Permissions
+                .Select(p =>
+                    new Claim("Permission",  p.PermissionType.ToString()));
 
             var tokenDescriptor = new SecurityTokenDescriptor
             {
@@ -76,12 +81,16 @@ namespace Authentication.API.Controllers
                     
                 }.Concat(permissions)),
 
-                SigningCredentials = new SigningCredentials(new RsaSecurityKey(""), )
-
-                
+                SigningCredentials = new SigningCredentials(
+                    new SymmetricSecurityKey(
+                        Encoding.UTF8.GetBytes(_configuration["JwtTokenSecret"])),
+                SecurityAlgorithms.HmacSha256Signature )
             };
 
-            var 
+            var handler = new JwtSecurityTokenHandler();
+            var jwtToken = handler.CreateJwtSecurityToken(tokenDescriptor);
+
+            return handler.WriteToken(jwtToken);
         }
     }
 }

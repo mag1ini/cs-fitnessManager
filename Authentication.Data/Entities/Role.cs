@@ -7,7 +7,7 @@ namespace Authentication.Data.Entities
     {
         public string Name { get; set; }
 
-        public List<Permission> Permissions { get; set; }
+        public List<RolePermission> RolePermissions { get; set; }
     }
 
     

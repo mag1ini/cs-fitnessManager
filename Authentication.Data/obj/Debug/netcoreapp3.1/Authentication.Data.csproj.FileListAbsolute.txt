@@ -8,5 +8,8 @@ M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\Authentication.Data\obj\Debug\netc
 M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\Authentication.Data\obj\Debug\netcoreapp3.1\Authentication.Data.pdb
 M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\Authentication.Data\bin\Debug\netcoreapp3.1\Infrastructure.Data.dll
 M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\Authentication.Data\bin\Debug\netcoreapp3.1\Infrastructure.Data.pdb
-M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\Authentication.Data\obj\Debug\netcoreapp3.1\Authentication.Data.csproj.CoreCompileInputs.cache
 M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\Authentication.Data\obj\Debug\netcoreapp3.1\Authentication.Data.csproj.CopyComplete
+M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\Authentication.Data\bin\Debug\netcoreapp3.1\Authentication.Data.runtimeconfig.json
+M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\Authentication.Data\bin\Debug\netcoreapp3.1\Authentication.Data.runtimeconfig.dev.json
+M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\Authentication.Data\obj\Debug\netcoreapp3.1\Authentication.Data.genruntimeconfig.cache
+M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\Authentication.Data\obj\Debug\netcoreapp3.1\Authentication.Data.csproj.CoreCompileInputs.cache

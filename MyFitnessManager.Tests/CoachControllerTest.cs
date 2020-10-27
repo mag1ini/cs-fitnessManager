@@ -14,6 +14,7 @@ namespace MyFitnessManager.Tests
 {
     public class CoachControllerTest : BaseApiTest
     {
+        
         private string ApiUrl = "/api/coach";
 
         [Fact]

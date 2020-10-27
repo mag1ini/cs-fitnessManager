@@ -34,26 +34,22 @@ namespace Authentication.API.Controllers
             if (!ModelState.IsValid) return BadRequest(ModelState);
 
             var user = await _context.Users
+                    .Include(u=>u.RefreshToken)
                     .Include(u=>u.Role)
-                    .ThenInclude(r=>r.Permissions)
+                    .ThenInclude(r=>r.RolePermissions)
                     .FirstOrDefaultAsync(u =>
-                u.Username.Equals(model.Username,StringComparison.Ordinal)
-             && u.Password.Equals(model.Password, StringComparison.Ordinal));
+                        u.Username == model.Username &&
+                        u.Password == model.Password);
 
             if (user == null) return Unauthorized(ModelState);
 
             var accessToken = GenerateAccessToken(user);
 
             var refreshToken = Guid.NewGuid();
-            
-            _context.RefreshTokens.Update(new RefreshToken
-            {
-                //   Id = user.RefreshTokenId ?? 0,
-                Id = user.RefreshTokenId ?? 0,
-                Refresh = refreshToken,
-                UserId = user.Id
-            });
-           await _context.SaveChangesAsync();
+
+            user.RefreshToken.Refresh = refreshToken;
+
+            await _context.SaveChangesAsync();
 
             return Ok(new TokenResponseModel(accessToken, refreshToken));
 
@@ -62,8 +58,7 @@ namespace Authentication.API.Controllers
         private string GenerateAccessToken(User user)
         {
             var permissions = user
-                .Role
-                .Permissions
+                .Role.RolePermissions
                 .Select(p =>
                     new Claim("Permission",  p.PermissionType.ToString()));
 

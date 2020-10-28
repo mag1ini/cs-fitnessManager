@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
@@ -9,6 +9,26 @@
     <Compile Remove="Migrations\20200927221035_Initial.Designer.cs" />
     <Compile Remove="Migrations\20200927223710_Initial.cs" />
     <Compile Remove="Migrations\20200927223710_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20201028193036_Initial.cs" />
+    <Compile Remove="Migrations\20201028193036_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20201028200307_Initial.cs" />
+    <Compile Remove="Migrations\20201028200307_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20201028200404_Initial.cs" />
+    <Compile Remove="Migrations\20201028200404_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20201028200742_Initial.cs" />
+    <Compile Remove="Migrations\20201028200742_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20201028200823_Initial.cs" />
+    <Compile Remove="Migrations\20201028200823_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20201028200911_Initial.cs" />
+    <Compile Remove="Migrations\20201028200911_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20201028201135_Initial.cs" />
+    <Compile Remove="Migrations\20201028201135_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20201028201553_Initial.cs" />
+    <Compile Remove="Migrations\20201028201553_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20201028201651_Initial2.cs" />
+    <Compile Remove="Migrations\20201028201651_Initial2.Designer.cs" />
+    <Compile Remove="Migrations\20201028201916_Seed.cs" />
+    <Compile Remove="Migrations\20201028201916_Seed.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -26,10 +46,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Infrastructure.Data\Infrastructure.Data.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Migrations\" />
   </ItemGroup>
 
 </Project>

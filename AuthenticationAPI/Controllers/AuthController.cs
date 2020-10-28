@@ -68,6 +68,7 @@ namespace Authentication.API.Controllers
                 Audience = _configuration["Audience"] ?? throw new ArgumentException(),
                 IssuedAt = DateTime.UtcNow,
                 Expires = DateTime.UtcNow.AddMinutes(_configuration.GetValue<int>("TokenExpiryDuration")),
+
                 Subject = new ClaimsIdentity(new List<Claim>
                 {
                     new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),

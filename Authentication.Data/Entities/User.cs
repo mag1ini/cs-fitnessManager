@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Text;
 using Infrastructure.Data;
 
@@ -13,6 +14,7 @@ namespace Authentication.Data.Entities
         public string Username { get; set; }
         public string Password { get; set; }
 
+        public int RefreshTokenId { get; set; }
         public RefreshToken RefreshToken { get; set; }
     }
 

@@ -27,6 +27,7 @@ namespace Authentication.Data
                 .WithOne(rt => rt.User)
                 .HasForeignKey<RefreshToken>(rt => rt.UserId);
 
+
             modelBuilder.Entity<RefreshToken>()
                 .HasIndex(rt => rt.UserId)
                 .IsUnique();

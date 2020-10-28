@@ -29,6 +29,14 @@
     <Compile Remove="Migrations\20201028201651_Initial2.Designer.cs" />
     <Compile Remove="Migrations\20201028201916_Seed.cs" />
     <Compile Remove="Migrations\20201028201916_Seed.Designer.cs" />
+    <Compile Remove="Migrations\20201028202139_Initial.cs" />
+    <Compile Remove="Migrations\20201028202139_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20201028202224_Seeder.cs" />
+    <Compile Remove="Migrations\20201028202224_Seeder.Designer.cs" />
+    <Compile Remove="Migrations\20201028225700_Seed.cs" />
+    <Compile Remove="Migrations\20201028225700_Seed.Designer.cs" />
+    <Compile Remove="Migrations\20201028231539_Seed.cs" />
+    <Compile Remove="Migrations\20201028231539_Seed.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

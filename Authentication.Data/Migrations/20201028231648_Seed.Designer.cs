@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Authentication.Data.Migrations
 {
     [DbContext(typeof(AuthenticationDbContext))]
-    [Migration("20201028202224_Seeder")]
-    partial class Seeder
+    [Migration("20201028231648_Seed")]
+    partial class Seed
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -228,9 +228,6 @@ namespace Authentication.Data.Migrations
                     b.Property<string>("Password")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("RefreshTokenId")
-                        .HasColumnType("int");
-
                     b.Property<int>("RoleId")
                         .HasColumnType("int");
 
@@ -248,7 +245,6 @@ namespace Authentication.Data.Migrations
                         {
                             Id = 1,
                             Password = "12345679",
-                            RefreshTokenId = 0,
                             RoleId = 1,
                             Username = "alex"
                         },
@@ -256,7 +252,6 @@ namespace Authentication.Data.Migrations
                         {
                             Id = 2,
                             Password = "12345679",
-                            RefreshTokenId = 0,
                             RoleId = 2,
                             Username = "sam"
                         },
@@ -264,7 +259,6 @@ namespace Authentication.Data.Migrations
                         {
                             Id = 3,
                             Password = "12345679",
-                            RefreshTokenId = 0,
                             RoleId = 3,
                             Username = "david"
                         },
@@ -272,7 +266,6 @@ namespace Authentication.Data.Migrations
                         {
                             Id = 4,
                             Password = "12345679",
-                            RefreshTokenId = 0,
                             RoleId = 3,
                             Username = "miranda"
                         },
@@ -280,7 +273,6 @@ namespace Authentication.Data.Migrations
                         {
                             Id = 5,
                             Password = "12345679",
-                            RefreshTokenId = 0,
                             RoleId = 4,
                             Username = "piter"
                         },
@@ -288,7 +280,6 @@ namespace Authentication.Data.Migrations
                         {
                             Id = 6,
                             Password = "12345679",
-                            RefreshTokenId = 0,
                             RoleId = 4,
                             Username = "jack"
                         },
@@ -296,7 +287,6 @@ namespace Authentication.Data.Migrations
                         {
                             Id = 7,
                             Password = "12345679",
-                            RefreshTokenId = 0,
                             RoleId = 4,
                             Username = "oliver"
                         });

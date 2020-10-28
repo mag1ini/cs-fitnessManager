@@ -28,7 +28,7 @@ namespace Authentication.API.Controllers
             _configuration = configuration;
             _context = context;
         }
-        [HttpPost]
+        [HttpPost("authenticate")]
         public async Task<ActionResult> Authenticate([FromBody] LoginModel model)
         {
             if (!ModelState.IsValid) return BadRequest(ModelState);
@@ -45,7 +45,11 @@ namespace Authentication.API.Controllers
 
             var accessToken = GenerateAccessToken(user);
 
+        
             var refreshToken = Guid.NewGuid();
+            
+            if (user.RefreshToken == null) 
+                user.RefreshToken = new RefreshToken();
 
             user.RefreshToken.Refresh = refreshToken;
 

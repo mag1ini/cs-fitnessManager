@@ -48,8 +48,7 @@ namespace Authentication.Data.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     RoleId = table.Column<int>(nullable: false),
                     Username = table.Column<string>(nullable: true),
-                    Password = table.Column<string>(nullable: true),
-                    RefreshTokenId = table.Column<int>(nullable: true)
+                    Password = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {

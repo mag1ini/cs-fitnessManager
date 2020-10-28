@@ -2,7 +2,7 @@
 
 namespace Authentication.Data.Migrations
 {
-    public partial class Seeder : Migration
+    public partial class Seed : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -45,16 +45,16 @@ namespace Authentication.Data.Migrations
 
             migrationBuilder.InsertData(
                 table: "Users",
-                columns: new[] { "Id", "Password", "RefreshTokenId", "RoleId", "Username" },
+                columns: new[] { "Id", "Password", "RoleId", "Username" },
                 values: new object[,]
                 {
-                    { 6, "12345679", null, 4, "jack" },
-                    { 3, "12345679", null, 3, "david" },
-                    { 2, "12345679", null, 2, "sam" },
-                    { 1, "12345679", null, 1, "alex" },
-                    { 5, "12345679", null, 4, "piter" },
-                    { 4, "12345679", null, 3, "miranda" },
-                    { 7, "12345679", null, 4, "oliver" }
+                    { 6, "12345679", 4, "jack" },
+                    { 3, "12345679", 3, "david" },
+                    { 2, "12345679", 2, "sam" },
+                    { 1, "12345679", 1, "alex" },
+                    { 5, "12345679", 4, "piter" },
+                    { 4, "12345679", 3, "miranda" },
+                    { 7, "12345679", 4, "oliver" }
                 });
         }
 

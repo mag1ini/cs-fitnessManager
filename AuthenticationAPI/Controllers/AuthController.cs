@@ -28,8 +28,9 @@ namespace Authentication.API.Controllers
             _configuration = configuration;
             _context = context;
         }
+
         [HttpPost("authenticate")]
-        public async Task<ActionResult> Authenticate([FromBody] LoginModel model)
+        public async Task<ActionResult<TokenResponseModel>> Authenticate([FromBody] LoginModel model)
         {
             if (!ModelState.IsValid) return BadRequest(ModelState);
 
@@ -59,6 +60,48 @@ namespace Authentication.API.Controllers
 
             return Ok(new TokenResponseModel(accessToken, refreshToken));
 
+        }
+
+        [HttpPost("refresh")]
+        public async Task<ActionResult<TokenResponseModel>> Refresh([FromBody] RefreshTokenModel model)
+        {
+            if (!ModelState.IsValid) return BadRequest(ModelState);
+
+            var existingToken = await _context.RefreshTokens
+                .FirstOrDefaultAsync(rt => rt.Refresh == model.RefreshToken);
+
+            if (existingToken == null) return Unauthorized();
+
+            var userIdClaim = HttpContext.User.Claims
+                .FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)
+                ?.Value;
+
+            if (   !int.TryParse(userIdClaim, out int userId)
+                || existingToken.UserId != userId)
+            {
+                return Unauthorized();
+            }
+
+            var user = await _context.Users
+                .Include(u => u.RefreshToken)
+                .Include(u => u.Role)
+                .ThenInclude(r => r.RolePermissions)
+                .FirstOrDefaultAsync(u => u.Id == userId);
+
+            if (user == null) return Unauthorized(ModelState);
+
+            var accessToken = GenerateAccessToken(user);
+
+            var newRefreshToken = Guid.NewGuid();
+
+            if (user.RefreshToken == null)
+                user.RefreshToken = new RefreshToken();
+
+            user.RefreshToken.Refresh = newRefreshToken;
+
+            await _context.SaveChangesAsync();
+
+            return Ok(new TokenResponseModel(accessToken, newRefreshToken));
         }
 
         private string GenerateAccessToken(User user)

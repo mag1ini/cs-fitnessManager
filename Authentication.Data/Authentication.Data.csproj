@@ -37,6 +37,8 @@
     <Compile Remove="Migrations\20201028225700_Seed.Designer.cs" />
     <Compile Remove="Migrations\20201028231539_Seed.cs" />
     <Compile Remove="Migrations\20201028231539_Seed.Designer.cs" />
+    <Compile Remove="Migrations\20201028231648_Seed.cs" />
+    <Compile Remove="Migrations\20201028231648_Seed.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

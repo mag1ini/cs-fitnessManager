@@ -61,5 +61,6 @@ M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\AuthenticationAPI\bin\Debug\netcor
 M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\AuthenticationAPI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\AuthenticationAPI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\AuthenticationAPI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\AuthenticationAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\AuthenticationAPI\obj\Debug\netcoreapp3.1\Authentication.API.csproj.CoreCompileInputs.cache
 M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\AuthenticationAPI\obj\Debug\netcoreapp3.1\Authentication.API.MvcApplicationPartsAssemblyInfo.cache

@@ -11,10 +11,10 @@ namespace Authentication.Data.Migrations
                 columns: new[] { "Id", "Name" },
                 values: new object[,]
                 {
-                    { 1, "Chief" },
-                    { 2, "Manager" },
-                    { 3, "Coach" },
-                    { 4, "Client" }
+                    { 1, "Client" },
+                    { 2, "Coach" },
+                    { 3, "Manager" },
+                    { 4, "Chief" }
                 });
 
             migrationBuilder.InsertData(
@@ -23,24 +23,24 @@ namespace Authentication.Data.Migrations
                 values: new object[,]
                 {
                     { 1, 2, 1 },
-                    { 19, 13, 4 },
-                    { 18, 12, 4 },
-                    { 17, 11, 4 },
-                    { 16, 9, 4 },
-                    { 15, 7, 4 },
-                    { 14, 5, 4 },
-                    { 13, 10, 4 },
-                    { 12, 8, 4 },
                     { 11, 6, 4 },
                     { 10, 4, 4 },
                     { 9, 2, 4 },
+                    { 14, 5, 4 },
+                    { 19, 13, 4 },
                     { 8, 10, 3 },
                     { 7, 8, 3 },
+                    { 12, 8, 4 },
                     { 6, 6, 3 },
-                    { 5, 4, 3 },
                     { 4, 2, 3 },
+                    { 15, 7, 4 },
                     { 3, 2, 2 },
-                    { 2, 1, 1 }
+                    { 16, 9, 4 },
+                    { 17, 11, 4 },
+                    { 18, 12, 4 },
+                    { 2, 1, 1 },
+                    { 5, 4, 3 },
+                    { 13, 10, 4 }
                 });
 
             migrationBuilder.InsertData(
@@ -48,13 +48,13 @@ namespace Authentication.Data.Migrations
                 columns: new[] { "Id", "Password", "RoleId", "Username" },
                 values: new object[,]
                 {
-                    { 6, "12345679", 4, "jack" },
                     { 3, "12345679", 3, "david" },
                     { 2, "12345679", 2, "sam" },
-                    { 1, "12345679", 1, "alex" },
-                    { 5, "12345679", 4, "piter" },
+                    { 7, "12345679", 1, "oliver" },
+                    { 6, "12345679", 1, "jack" },
+                    { 5, "12345679", 1, "piter" },
                     { 4, "12345679", 3, "miranda" },
-                    { 7, "12345679", 4, "oliver" }
+                    { 1, "12345679", 4, "alex" }
                 });
         }
 

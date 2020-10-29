@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "oiousF+YVSEywc9tgFLAL5RlJjjlhModYhNzGlWgdRycXFf1X5zDiwwWABuktBZGHHWo7I0wZw897F6I0Ti2dg==",
+  "dgSpecHash": "TqzQWIFwkqb4AvxJnUjS2Jgufr0GmF6eYDeXWIad4yzDFDwbVeIkS4T0qoTynulFlY7HDX5AKftNQ6eUZ23I+A==",
   "success": true,
   "projectFilePath": "M:\\mag1ini\\Step\\ASP NET CORE\\MyFitnessManager\\AuthenticationAPI\\Authentication.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\mag1ini\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.0.0\\microsoft.aspnetcore.authentication.jwtbearer.3.0.0.nupkg.sha512",
     "C:\\Users\\mag1ini\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\mag1ini\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "C:\\Users\\mag1ini\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

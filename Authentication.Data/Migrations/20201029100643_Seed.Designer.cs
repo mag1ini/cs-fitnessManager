@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Authentication.Data.Migrations
 {
     [DbContext(typeof(AuthenticationDbContext))]
-    [Migration("20201028231648_Seed")]
+    [Migration("20201029100643_Seed")]
     partial class Seed
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -60,22 +60,22 @@ namespace Authentication.Data.Migrations
                         new
                         {
                             Id = 1,
-                            Name = "Chief"
+                            Name = "Client"
                         },
                         new
                         {
                             Id = 2,
-                            Name = "Manager"
-                        },
-                        new
-                        {
-                            Id = 3,
                             Name = "Coach"
                         },
                         new
                         {
+                            Id = 3,
+                            Name = "Manager"
+                        },
+                        new
+                        {
                             Id = 4,
-                            Name = "Client"
+                            Name = "Chief"
                         });
                 });
 
@@ -245,7 +245,7 @@ namespace Authentication.Data.Migrations
                         {
                             Id = 1,
                             Password = "12345679",
-                            RoleId = 1,
+                            RoleId = 4,
                             Username = "alex"
                         },
                         new
@@ -273,21 +273,21 @@ namespace Authentication.Data.Migrations
                         {
                             Id = 5,
                             Password = "12345679",
-                            RoleId = 4,
+                            RoleId = 1,
                             Username = "piter"
                         },
                         new
                         {
                             Id = 6,
                             Password = "12345679",
-                            RoleId = 4,
+                            RoleId = 1,
                             Username = "jack"
                         },
                         new
                         {
                             Id = 7,
                             Password = "12345679",
-                            RoleId = 4,
+                            RoleId = 1,
                             Username = "oliver"
                         });
                 });

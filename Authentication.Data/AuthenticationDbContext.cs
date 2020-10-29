@@ -85,10 +85,10 @@ namespace Authentication.Data
 
             var roles = new List<Role>
             {
-                new Role {Id = 1, Name = "Chief"},
-                new Role {Id = 2, Name = "Manager"},
-                new Role {Id = 3, Name = "Coach"},
-                new Role {Id = 4, Name = "Client"},
+                new Role {Id = 1, Name = "Client"},
+                new Role {Id = 2, Name = "Coach"},
+                new Role {Id = 3, Name = "Manager"},
+                new Role {Id = 4, Name = "Chief"},
             };
 
             modelBuilder.Entity<Role>()
@@ -96,13 +96,13 @@ namespace Authentication.Data
 
             var users = new List<User>
             {
-                new User {Id = 1, RoleId = 1, Password = "12345679", Username = "alex"},
+                new User {Id = 1, RoleId = 4, Password = "12345679", Username = "alex"},
                 new User {Id = 2, RoleId = 2, Password = "12345679", Username = "sam"},
                 new User {Id = 3, RoleId = 3, Password = "12345679", Username = "david"},
                 new User {Id = 4, RoleId = 3, Password = "12345679", Username = "miranda"},
-                new User {Id = 5, RoleId = 4, Password = "12345679", Username = "piter"},
-                new User {Id = 6, RoleId = 4, Password = "12345679", Username = "jack"},
-                new User {Id = 7, RoleId = 4, Password = "12345679", Username = "oliver"},
+                new User {Id = 5, RoleId = 1, Password = "12345679", Username = "piter"},
+                new User {Id = 6, RoleId = 1, Password = "12345679", Username = "jack"},
+                new User {Id = 7, RoleId = 1, Password = "12345679", Username = "oliver"},
             };
 
             modelBuilder.Entity<User>()

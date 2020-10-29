@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "hRgLPySGJZX/hshIodafwdn7bryoA5ZR0sIhhOQQfj7mRtbUemHOeQS7lIGMKN/2mDdUEBvOz6MBzPfp6GK0yg==",
+  "dgSpecHash": "VID/lNkYLnRgrojIvcaM2d7jb5m/YllgLdtC07hMF0twdlleXqip7NzRjR3gjFaiS7AQGSx2mFZ765UKvX9eqQ==",
   "success": true,
   "projectFilePath": "M:\\mag1ini\\Step\\ASP NET CORE\\MyFitnessManager\\MyFitnessManager\\MyFitnessManager.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mag1ini\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
     "C:\\Users\\mag1ini\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.0.1\\automapper.extensions.microsoft.dependencyinjection.8.0.1.nupkg.sha512",
+    "C:\\Users\\mag1ini\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.0.0\\microsoft.aspnetcore.authentication.jwtbearer.3.0.0.nupkg.sha512",
     "C:\\Users\\mag1ini\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\mag1ini\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "C:\\Users\\mag1ini\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

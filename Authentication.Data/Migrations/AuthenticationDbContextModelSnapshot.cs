@@ -58,22 +58,22 @@ namespace Authentication.Data.Migrations
                         new
                         {
                             Id = 1,
-                            Name = "Chief"
+                            Name = "Client"
                         },
                         new
                         {
                             Id = 2,
-                            Name = "Manager"
-                        },
-                        new
-                        {
-                            Id = 3,
                             Name = "Coach"
                         },
                         new
                         {
+                            Id = 3,
+                            Name = "Manager"
+                        },
+                        new
+                        {
                             Id = 4,
-                            Name = "Client"
+                            Name = "Chief"
                         });
                 });
 
@@ -243,7 +243,7 @@ namespace Authentication.Data.Migrations
                         {
                             Id = 1,
                             Password = "12345679",
-                            RoleId = 1,
+                            RoleId = 4,
                             Username = "alex"
                         },
                         new
@@ -271,21 +271,21 @@ namespace Authentication.Data.Migrations
                         {
                             Id = 5,
                             Password = "12345679",
-                            RoleId = 4,
+                            RoleId = 1,
                             Username = "piter"
                         },
                         new
                         {
                             Id = 6,
                             Password = "12345679",
-                            RoleId = 4,
+                            RoleId = 1,
                             Username = "jack"
                         },
                         new
                         {
                             Id = 7,
                             Password = "12345679",
-                            RoleId = 4,
+                            RoleId = 1,
                             Username = "oliver"
                         });
                 });

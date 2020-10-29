@@ -33,6 +33,8 @@ namespace Authentication.API.Controllers
         {
             if (!ModelState.IsValid) return BadRequest(ModelState);
 
+            var identityUser = HttpContext.User;
+
             var user = await _context.Users
                     .Include(u=>u.RefreshToken)
                     .Include(u=>u.Role)

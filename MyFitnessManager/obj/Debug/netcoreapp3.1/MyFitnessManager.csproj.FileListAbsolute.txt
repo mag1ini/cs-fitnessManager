@@ -60,7 +60,8 @@ M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\MyFitnessManager\obj\Debug\netcore
 M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\MyFitnessManager\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\MyFitnessManager\bin\Debug\netcoreapp3.1\AutoMapper.dll
 M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\MyFitnessManager\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
-M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\MyFitnessManager\obj\Debug\netcoreapp3.1\MyFitnessManager.csproj.CoreCompileInputs.cache
-M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\MyFitnessManager\obj\Debug\netcoreapp3.1\MyFitnessManager.MvcApplicationPartsAssemblyInfo.cache
 M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\MyFitnessManager\bin\Debug\netcoreapp3.1\Infrastructure.Data.dll
 M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\MyFitnessManager\bin\Debug\netcoreapp3.1\Infrastructure.Data.pdb
+M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\MyFitnessManager\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\MyFitnessManager\obj\Debug\netcoreapp3.1\MyFitnessManager.csproj.CoreCompileInputs.cache
+M:\mag1ini\Step\ASP NET CORE\MyFitnessManager\MyFitnessManager\obj\Debug\netcoreapp3.1\MyFitnessManager.MvcApplicationPartsAssemblyInfo.cache

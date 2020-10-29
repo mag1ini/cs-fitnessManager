@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "sbbIGVIH6MLfFaizzDEiLFAq/s1ppHPzNIdulvsGEIT0Dlm87Jb/0tq/yJwSlnChCLQIGT/R+qQVV5YGtT0vEA==",
+  "dgSpecHash": "FreY743mqk8RdvzsYqhIcErh1sblCnZPJ0Zal4XPwAiFv/syN35eJEtCQ0lb+BwxgGZ5V6BKJDbGnSwu9ScJ9Q==",
   "success": true,
   "projectFilePath": "M:\\mag1ini\\Step\\ASP NET CORE\\MyFitnessManager\\MyFitnessManager.Tests\\MyFitnessManager.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mag1ini\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
     "C:\\Users\\mag1ini\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.0.1\\automapper.extensions.microsoft.dependencyinjection.8.0.1.nupkg.sha512",
     "C:\\Users\\mag1ini\\.nuget\\packages\\coverlet.collector\\1.2.0\\coverlet.collector.1.2.0.nupkg.sha512",
+    "C:\\Users\\mag1ini\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.0.0\\microsoft.aspnetcore.authentication.jwtbearer.3.0.0.nupkg.sha512",
     "C:\\Users\\mag1ini\\.nuget\\packages\\microsoft.aspnetcore.hosting\\2.2.7\\microsoft.aspnetcore.hosting.2.2.7.nupkg.sha512",
     "C:\\Users\\mag1ini\\.nuget\\packages\\microsoft.aspnetcore.hosting.abstractions\\2.2.0\\microsoft.aspnetcore.hosting.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\mag1ini\\.nuget\\packages\\microsoft.aspnetcore.hosting.server.abstractions\\2.2.0\\microsoft.aspnetcore.hosting.server.abstractions.2.2.0.nupkg.sha512",

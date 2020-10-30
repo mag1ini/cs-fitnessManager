@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="68330fba-f280-4c6c-a06b-7655f45223c5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MyFitnessManager/.idea/contentModel.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MyFitnessManager/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MyFitnessManager/.idea/indexLayout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MyFitnessManager/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MyFitnessManager/.idea/projectSettingsUpdater.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MyFitnessManager/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MyFitnessManager/riderModule.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/MyFitnessManager/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/MyFitnessManager/v16/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthenticationAPI/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/AuthenticationAPI/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthenticationAPI/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AuthenticationAPI/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthenticationAPI/bin/Debug/netcoreapp3.1/Authentication.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AuthenticationAPI/bin/Debug/netcoreapp3.1/Authentication.API.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthenticationAPI/bin/Debug/netcoreapp3.1/Authentication.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AuthenticationAPI/bin/Debug/netcoreapp3.1/Authentication.API.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthenticationAPI/bin/Debug/netcoreapp3.1/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/AuthenticationAPI/bin/Debug/netcoreapp3.1/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthenticationAPI/obj/Debug/netcoreapp3.1/Authentication.API.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AuthenticationAPI/obj/Debug/netcoreapp3.1/Authentication.API.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthenticationAPI/obj/Debug/netcoreapp3.1/Authentication.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AuthenticationAPI/obj/Debug/netcoreapp3.1/Authentication.API.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthenticationAPI/obj/Debug/netcoreapp3.1/Authentication.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AuthenticationAPI/obj/Debug/netcoreapp3.1/Authentication.API.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure.Web/RequirePermission/PermissionRequirementAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure.Web/RequirePermission/PermissionRequirementAttribute.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure.Web/RequirePermission/PermissionRequirementFilter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure.Web/RequirePermission/PermissionRequirementFilter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure.Web/bin/Debug/netcoreapp3.1/Infrastructure.Web.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure.Web/bin/Debug/netcoreapp3.1/Infrastructure.Web.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure.Web/bin/Debug/netcoreapp3.1/Infrastructure.Web.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure.Web/bin/Debug/netcoreapp3.1/Infrastructure.Web.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure.Web/obj/Debug/netcoreapp3.1/Infrastructure.Web.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure.Web/obj/Debug/netcoreapp3.1/Infrastructure.Web.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure.Web/obj/Debug/netcoreapp3.1/Infrastructure.Web.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure.Web/obj/Debug/netcoreapp3.1/Infrastructure.Web.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure.Web/obj/Debug/netcoreapp3.1/Infrastructure.Web.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure.Web/obj/Debug/netcoreapp3.1/Infrastructure.Web.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyFitnessManager.Tests/BaseApiTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MyFitnessManager.Tests/BaseApiTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyFitnessManager.Tests/bin/Debug/netcoreapp3.1/MyFitnessManager.Tests.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/MyFitnessManager.Tests/bin/Debug/netcoreapp3.1/MyFitnessManager.Tests.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyFitnessManager.Tests/bin/Debug/netcoreapp3.1/MyFitnessManager.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MyFitnessManager.Tests/bin/Debug/netcoreapp3.1/MyFitnessManager.Tests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyFitnessManager.Tests/bin/Debug/netcoreapp3.1/MyFitnessManager.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MyFitnessManager.Tests/bin/Debug/netcoreapp3.1/MyFitnessManager.Tests.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyFitnessManager.Tests/bin/Debug/netcoreapp3.1/MyFitnessManager.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MyFitnessManager.Tests/bin/Debug/netcoreapp3.1/MyFitnessManager.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyFitnessManager.Tests/bin/Debug/netcoreapp3.1/MyFitnessManager.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MyFitnessManager.Tests/bin/Debug/netcoreapp3.1/MyFitnessManager.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyFitnessManager.Tests/obj/Debug/netcoreapp3.1/MyFitnessManager.Tests.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MyFitnessManager.Tests/obj/Debug/netcoreapp3.1/MyFitnessManager.Tests.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyFitnessManager.Tests/obj/Debug/netcoreapp3.1/MyFitnessManager.Tests.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MyFitnessManager.Tests/obj/Debug/netcoreapp3.1/MyFitnessManager.Tests.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyFitnessManager.Tests/obj/Debug/netcoreapp3.1/MyFitnessManager.Tests.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MyFitnessManager.Tests/obj/Debug/netcoreapp3.1/MyFitnessManager.Tests.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyFitnessManager.Tests/obj/Debug/netcoreapp3.1/MyFitnessManager.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MyFitnessManager.Tests/obj/Debug/netcoreapp3.1/MyFitnessManager.Tests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyFitnessManager.Tests/obj/Debug/netcoreapp3.1/MyFitnessManager.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MyFitnessManager.Tests/obj/Debug/netcoreapp3.1/MyFitnessManager.Tests.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyFitnessManager/Controllers/CoachController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MyFitnessManager/Controllers/CoachController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyFitnessManager/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/MyFitnessManager/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyFitnessManager/bin/Debug/netcoreapp3.1/Infrastructure.Web.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MyFitnessManager/bin/Debug/netcoreapp3.1/Infrastructure.Web.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyFitnessManager/bin/Debug/netcoreapp3.1/Infrastructure.Web.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MyFitnessManager/bin/Debug/netcoreapp3.1/Infrastructure.Web.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyFitnessManager/bin/Debug/netcoreapp3.1/MyFitnessManager.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MyFitnessManager/bin/Debug/netcoreapp3.1/MyFitnessManager.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyFitnessManager/bin/Debug/netcoreapp3.1/MyFitnessManager.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MyFitnessManager/bin/Debug/netcoreapp3.1/MyFitnessManager.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyFitnessManager/bin/Debug/netcoreapp3.1/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/MyFitnessManager/bin/Debug/netcoreapp3.1/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyFitnessManager/obj/Debug/netcoreapp3.1/MyFitnessManager.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MyFitnessManager/obj/Debug/netcoreapp3.1/MyFitnessManager.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyFitnessManager/obj/Debug/netcoreapp3.1/MyFitnessManager.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MyFitnessManager/obj/Debug/netcoreapp3.1/MyFitnessManager.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyFitnessManager/obj/Debug/netcoreapp3.1/MyFitnessManager.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MyFitnessManager/obj/Debug/netcoreapp3.1/MyFitnessManager.pdb" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1jcNFvkgqLNYsFWRGihHCUO3I8G" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="http.proxy" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="68330fba-f280-4c6c-a06b-7655f45223c5" name="Default Changelist" comment="" />
+      <created>1604099319553</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604099319553</updated>
+      <workItem from="1604099320675" duration="42000" />
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="687" y="194" key="FileChooserDialogImpl" timestamp="1604099354583">
+      <screen x="0" y="0" width="1920" height="1034" />
+    </state>
+    <state x="687" y="194" key="FileChooserDialogImpl/0.0.1920.1034/-1280.0.1280.984@0.0.1920.1034" timestamp="1604099354583" />
+  </component>
+</project>

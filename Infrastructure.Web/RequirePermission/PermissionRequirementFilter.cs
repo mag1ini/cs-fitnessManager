@@ -21,10 +21,7 @@ namespace Infrastructure.Web.RequirePermission
                        claim.Type == CLAIM_TYPE
                     && claim.Value == ((int)_permissionType).ToString());
 
-            if (!hasPermission)
-            {
-                context.Result = new UnauthorizedResult();
-            }
+            if (!hasPermission) context.Result = new UnauthorizedResult();
         }
     }
 }

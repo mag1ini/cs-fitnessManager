@@ -21,7 +21,7 @@ namespace MyFitnessManager.Tests
         {
             var webHostBuilder = new WebHostBuilder()
                 .UseSetting("DbConnectionString",
-                    @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=FitnessDbTest;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False")
+                    @"Data Source=DESKTOP-A4P69B9\\SQLEXPRESS;Initial Catalog=FitnessDb;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False")
                 .UseStartup<Startup>();
 
 

@@ -5,6 +5,7 @@ using System.Net;
 using System.Threading.Tasks;
 using Infrastructure.Data;
 using Infrastructure.Web.RequirePermission;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -18,6 +19,7 @@ namespace MyFitnessManager.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class CoachController : ControllerBase
     {
         private readonly ICoachRepository _repository;

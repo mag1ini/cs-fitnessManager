@@ -1,7 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-
-namespace Authentication.Data.Entities
+namespace Infrastructure.Data
 {
     public enum PermissionType 
     {

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using Authentication.Data.Entities;
+using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 
 namespace Authentication.Data
@@ -43,7 +44,7 @@ namespace Authentication.Data
                 .HasIndex(rp => new {rp.RoleId, rp.PermissionType})
                 .IsUnique();
 
-            SeedData(modelBuilder);
+            this.SeedData(modelBuilder);
 
 
         }

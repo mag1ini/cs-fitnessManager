@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
+using Infrastructure.Data;
+using Infrastructure.Web.RequirePermission;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -42,6 +44,7 @@ namespace MyFitnessManager.Controllers
 
         // POST api/<CoachController>
         [HttpPost]
+        [PermissionRequirement(PermissionType.AddCoaches)]
         public async Task<ActionResult<Coach>> Post([FromBody] Coach coach)
         {
             try

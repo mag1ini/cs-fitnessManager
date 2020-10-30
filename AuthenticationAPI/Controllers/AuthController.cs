@@ -109,7 +109,7 @@ namespace Authentication.API.Controllers
             var permissions = user
                 .Role.RolePermissions
                 .Select(p =>
-                    new Claim("Permission",  p.PermissionType.ToString()));
+                    new Claim("Permission",  ((int)p.PermissionType).ToString()));
 
             var tokenDescriptor = new SecurityTokenDescriptor
             {

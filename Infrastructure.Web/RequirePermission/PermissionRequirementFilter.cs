@@ -13,8 +13,7 @@ namespace Infrastructure.Web.RequirePermission
         {
             _permissionType = permissionType;
         }
-
-
+        
         public void OnAuthorization(AuthorizationFilterContext context)
         {
             var hasPermission = context.HttpContext.User.Claims

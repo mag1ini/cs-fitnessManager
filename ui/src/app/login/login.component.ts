@@ -10,8 +10,8 @@ export class LoginComponent implements OnInit {
 
   constructor(readonly authService: AuthService ) { }
 
-  username: string;
-  password: string;
+  username: string = 'alex';
+  password: string = '12345679';
 
   ngOnInit(): void {}
 

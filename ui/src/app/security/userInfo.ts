@@ -13,7 +13,6 @@ class UserInfo {
     this.issuedAt = new Date(decoded.iat * 1000);
     this.expires = new Date(decoded.exp * 1000);
     this.permissions = decoded.Permission.map(a => PermissionType[parseInt(a,0)]);
-
     console.log(this);
   }
 }

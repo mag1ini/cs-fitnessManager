@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {HttpHeaders} from '@angular/common/http';
-import {BehaviorSubject} from 'rxjs';
+import {BehaviorSubject, Observable} from 'rxjs';
 import {map, tap} from 'rxjs/operators';
 import jwt_decode from 'jwt-decode';
 import UserInfo from '../security/userInfo';
@@ -31,17 +31,29 @@ export class AuthService {
       })).subscribe();
   }
 
-  login(username: string, password: string) {
-
+  login(username: string, password: string): Observable<any> {
     const jsonBody = JSON.stringify({username, password});
-    this.http.post(`${this.apiUrl}/authenticate`, jsonBody)
-      .subscribe((response: TokenResponse) => {
-
-        const token = response.accessToken;
-        this.$accessToken.next(token);
-        this.$userInfo.next(new UserInfo(jwt_decode(token)));
-
-      });
-
+    const loginRequest =   this.http.post(`${this.apiUrl}/authenticate`, jsonBody);
+    loginRequest .subscribe(this.processToken);
+    return loginRequest;
   }
+
+  refresh(): Observable<any> {
+    if (!localStorage[this.storageKey])  { return null; }
+
+    const refreshRequest = this.http.post(`${this.apiUrl}/refresh`, {});
+    refreshRequest.subscribe(this.processToken);
+
+    return  refreshRequest;
+  }
+
+  processToken(response: TokenResponse) {
+    const token = response.accessToken;
+    this.$accessToken.next(token);
+    this.$userInfo.next(new UserInfo(jwt_decode(token)));
+  }
+
+
+
+
 }

@@ -31,23 +31,24 @@ export class AuthService {
       })).subscribe();
   }
 
-  login(username: string, password: string): Observable<any> {
+  login(username: string, password: string){
+    const headers = new HttpHeaders({'Content-Type': 'application/json; charset=utf8'});
     const jsonBody = JSON.stringify({username, password});
-    const loginRequest =   this.http.post(`${this.apiUrl}/authenticate`, jsonBody);
-    loginRequest .subscribe(this.processToken);
-    return loginRequest;
+    this.http.post(`${this.apiUrl}/authenticate`, jsonBody,{headers}).pipe(tap(this.processToken.bind(this)))
+      .subscribe();
   }
 
-  refresh(): Observable<any> {
+  refresh(){
     if (!localStorage[this.storageKey])  { return null; }
+    const headers = new HttpHeaders({'Content-Type': 'application/json; charset=utf8'});
+    this.http.post(`${this.apiUrl}/refresh`, {}, {headers})
+      .pipe(tap(this.processToken.bind(this)))
+      .subscribe();
 
-    const refreshRequest = this.http.post(`${this.apiUrl}/refresh`, {});
-    refreshRequest.subscribe(this.processToken);
-
-    return  refreshRequest;
   }
 
   processToken(response: TokenResponse) {
+    console.log(response);
     const token = response.accessToken;
     this.$accessToken.next(token);
     this.$userInfo.next(new UserInfo(jwt_decode(token)));

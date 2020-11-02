@@ -146,10 +146,12 @@ namespace Authentication.API.Controllers
 
         private void AddRefreshTokenCookie(Guid refreshToken)
         {
-            HttpContext.Response.Cookies.Append(
-                "Refresh",
-                refreshToken.ToString(),
-                new CookieOptions { HttpOnly = true, });
+            HttpContext.Response.Cookies
+                .Append("Refresh", refreshToken.ToString(), new CookieOptions
+                {
+                    HttpOnly = true,
+                    Expires = DateTime.Now.AddDays(100)
+                });
         }
     }
 }

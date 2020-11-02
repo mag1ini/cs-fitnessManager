@@ -6,11 +6,13 @@ import { LoginComponent } from './login/login.component';
 import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
 import {AuthTokenInterceptor} from './security/authTokenInterceptor';
+import { AddCoachComponent } from './coach/add/add-coach.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    AddCoachComponent
   ],
   imports: [
     BrowserModule,

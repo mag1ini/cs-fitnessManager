@@ -30,6 +30,16 @@ namespace MyFitnessManager
         {
             services.AddControllers();
 
+            services.AddCors(options =>
+            {
+                options.AddPolicy(name: "localhost",
+                    builder =>
+                    {
+                        builder.WithOrigins("http://localhost:4200")
+                            .AllowAnyHeader()
+                            .AllowAnyMethod();
+                    });
+            });
 
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>
@@ -63,6 +73,7 @@ namespace MyFitnessManager
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseCors("localhost");
             }
 
             app.UseRouting();

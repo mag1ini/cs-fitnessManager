@@ -1,0 +1,23 @@
+<div>
+  <div>
+    <label>
+      firstname:
+      <input [(ngModel)]="firstname">
+    </label>
+  </div>
+  <div>
+    <label>
+      lastname:
+      <input [(ngModel)]="lastname">
+    </label>
+  </div>
+  <div>
+    <label>
+      Training type::
+      <input [(ngModel)]="trainingType">
+    </label>
+  </div>
+  <div>
+    <button (click)="add(firstname,lastname,trainingType)">Add</button>
+  </div>
+</div>

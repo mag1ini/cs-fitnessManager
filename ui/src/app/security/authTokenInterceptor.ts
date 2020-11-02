@@ -1,13 +1,15 @@
 import {Injectable} from '@angular/core';
 import {AuthService} from '../services/auth.service';
 import {HttpEvent, HttpHandler, HttpHeaders, HttpInterceptor, HttpRequest} from '@angular/common/http';
-import {EMPTY, Observable} from 'rxjs';
+import {EMPTY, Observable, Subject} from 'rxjs';
+import {switchMap, take} from 'rxjs/operators';
 
 @Injectable()
 export class AuthTokenInterceptor implements HttpInterceptor {
   requestTimeoutMilliSeconds = 30 * 1000;
   awaitedRequests: HttpRequest<any>[] = [];
   isRefreshInProgress = false;
+  $refreshSubject = new Subject<boolean>();
 
   constructor(readonly authService: AuthService) {
   }
@@ -18,48 +20,49 @@ export class AuthTokenInterceptor implements HttpInterceptor {
     if (!this.isTokenExpired()) {
       console.log(`token is not expired, making request`);
       return next.handle(this.injectAuthHeader(req));
-    } else {
+  //    return next.handle(this.injectAuthHeader(req));
+    }
+
+    if (req.url.includes('/api/auth/')) {
+      return next.handle(req);
+    }
       console.log(`token expired`);
 
-      if (this.isRefreshInProgress) {
-        console.log(`enqueue req to url ${req.url}`);
-        this.awaitedRequests.push(req);
-        return EMPTY;
-      } else {
+      if (!this.isRefreshInProgress) {
+
         console.log(`refreshing token`);
 
         this.isRefreshInProgress = true;
-        this.authService.refresh().subscribe(() => {
 
-          console.log(`refreshing successful`);
+        return this.authService.refresh()
+          .pipe(switchMap(() => {
+            console.log('refresh successful');
+            this.$refreshSubject.next(true);
+            this.isRefreshInProgress = false;
+            return next.handle(this.injectAuthHeader(req));
 
-          const reqWithAuth = this.injectAuthHeader(req);
-          for (const request of this.awaitedRequests) {
-            console.log(`make req to url ${req.url}`);
-            next.handle(this.injectAuthHeader(request));
-          }
-
-          this.awaitedRequests = [];
-          this.isRefreshInProgress = false;
-          return next.handle(reqWithAuth);
-        });
+          }));
       }
-    }
+      return this.$refreshSubject.pipe(
+        take(1),
+        switchMap(() => next.handle(this.injectAuthHeader(req))));
 
   }
 
   isTokenExpired() {
     return this.authService.$userInfo.value
+      && this.authService.$userInfo.value.expires
       && this.authService.$userInfo.value.expires < (new Date(Date.now() - this.requestTimeoutMilliSeconds));
   }
 
-  injectAuthHeader(req: HttpRequest<any>) {
-    return req.clone({
-      headers: new HttpHeaders({
-        Autorization: `Bearer ${this.authService.$accessToken.value}`,
-        'Content-Type': 'application/json; charset=utf8',
-      })
-    });
+  injectAuthHeader(req: HttpRequest<any>): HttpRequest<any> {
+
+    console.log(`injecting auth`, this.authService.$accessToken.value);
+    return !this.authService.$accessToken.value
+      ? req
+      : req.clone({headers: new HttpHeaders({authorization: `Bearer ${this.authService.$accessToken.value}`})});
+
+
   }
 
 }
